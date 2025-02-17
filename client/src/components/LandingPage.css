@@ -1,129 +1,121 @@
-/* Reset and Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  body {
-    background-color: #f0f8ea;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Container */
-  .container {
-    text-align: center;
-    padding: 50px 20px;
-    flex: 1;
-  }
-  
-  /* Header */
-  .header {
-    background: linear-gradient(135deg, #2d6a4f, #40916c);
-    color: white;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
-  
-  .header p {
-    font-size: 1.3rem;
-    margin-top: 10px;
-    opacity: 0.9;
-  }
-  
-  /* Section */
-  .section {
-    margin: 50px auto;
-    max-width: 800px;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section h2 {
-    color: #2d6a4f;
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  
-  .section p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-  }
-  
-  .section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .section li {
-    font-size: 1.1rem;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .section li::before {
-    content: "✔";
-    color: #2d6a4f;
-    font-weight: bold;
-  }
-  
-  /* Features Section */
-  .features {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
-  
-  .feature-box {
-    padding: 25px;
-    border-radius: 12px;
-    width: 300px;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  .feature-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .feature-box h3 {
-    color: #2d6a4f;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .feature-box p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  /* Footer */
-  .footer {
-    margin-top: auto;
-    padding: 5px;
-    color: 2d6a4f;
-    text-align: center;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    font-weight: 500;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #afe4c6; 
+  color: #444; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  text-align: center;
+  padding: 60px 20px;
+  flex: 1;
+}
+.header {
+  background-color: #650900;
+  color: white;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+.section {
+  margin: 60px auto;
+  max-width: 900px;
+  background: #650900;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  color: white; 
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: white; 
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.section ul {
+  color: white; 
+  list-style: none;
+  padding: 0;
+}
+
+.section li {
+  color: white; 
+  font-size: 1.2rem;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.section li::before {
+  content: "✔";
+  color: white;
+  font-weight: bold;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.feature-box {
+  padding: 30px;
+  border-radius: 15px;
+  width: 320px;
+  background: #650900; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box h3 {
+  color: white;
+  font-size: 1.7rem;
+  margin-bottom: 12px;
+}
+
+.feature-box p {
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+.footer {
+  margin-top: auto;
+  padding: 15px;
+  color: #530016;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
