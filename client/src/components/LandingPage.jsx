@@ -5,8 +5,8 @@ const LandingPage = () => {
   return (
     <div className="container">
       <header className="header">
-        <h1>Plantazon - Your One-Stop Plant Shop</h1>
-        <p>Bringing Nature to Your Doorstep</p>
+        <h1>Plantazon - Your Own Plant Shop</h1>
+        <p>Bring Nature to Your Doorstep with One Click</p>
       </header>
 
       <section className="section">
@@ -26,12 +26,12 @@ const LandingPage = () => {
           <p>Discover a wide selection of plants and seeds.</p>
         </div>
         <div className="feature-box">
-          <h3>Add to Cart</h3>
-          <p>Seamlessly add products to your cart and checkout securely.</p>
+          <h3>Your Cart</h3>
+          <p>Add products to your cart and checkout securely.</p>
         </div>
         <div className="feature-box">
-          <h3>Admin Dashboard</h3>
-          <p>Manage plants, track orders, and grow your business.</p>
+          <h3>Profile</h3>
+          <p>Manage plants, track orders and grow your business.</p>
         </div>
       </section>
 
