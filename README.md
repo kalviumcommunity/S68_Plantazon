@@ -14,3 +14,7 @@ Key Features includes:
 
 This is the render deployment link of my project which i have done till now :
         https://s68-plantazon.onrender.com
+
+
+This is the deployed link in vercel of my project which i have done till now :
+         https://s68plantazon-3uq8-git-main-irine-s-projects-b7910bb0.vercel.app
