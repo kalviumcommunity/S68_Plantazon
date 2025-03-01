@@ -1,0 +1,52 @@
+.plant-page {
+  text-align: center;
+  padding: 20px;
+  background-color: #afe4c6;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plant {
+  border: 1px solid #650900;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.plant:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plant img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.plant h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #650900;
+}
+
+.plant p {
+  font-size: 0.9em;
+  color: #650900;
+  margin: 5px 0;
+}
+
+.plant p:last-child {
+  font-weight: bold;
+  color: #650900;
+}
