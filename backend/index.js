@@ -2,6 +2,7 @@ const express = require('express');
 const { connectDB } = require('./db');  
 const bodyParser = require('body-parser');
 const routes = require('./routes'); 
+const cors = require('cors'); // Import CORS
 
 const app = express();
 
@@ -9,9 +10,8 @@ require('dotenv').config();
 const port = process.env.PORT || 5000;  
 const url = process.env.db_url; 
 
-
+app.use(cors()); // Use CORS
 app.use(bodyParser.json());
-
 
 app.listen(port, async () => {
   try {
