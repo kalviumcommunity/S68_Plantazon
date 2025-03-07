@@ -1,0 +1,95 @@
+.AddEntity {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #afe4c6;  /* Soft mint green background */
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #650900;  /* Dark reddish-brown color for the main heading */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #650900;  /* Dark reddish-brown color for labels */
+  }
+  
+  input, select, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;  /* White background for inputs */
+    color: #333;  /* Set text color to dark gray for visibility */
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: #650900;  /* Highlight input borders with reddish-brown when focused */
+    outline: none;  /* Remove default focus outline */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #650900;  /* Dark reddish-brown button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #af2b1f;  /* Slightly lighter shade of reddish-brown on hover */
+  }
+  
+  .plant-list {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #ffffff;  /* White background for plant items */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Light shadow for the list items */
+  }
+  
+  li img {
+    max-width: 100px;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #650900;  /* Dark reddish-brown color for plant name */
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  p strong {
+    color: #650900;  /* Dark reddish-brown color for labels in the plant details */
+  }
+  
