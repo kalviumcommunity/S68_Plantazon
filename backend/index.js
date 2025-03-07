@@ -10,7 +10,7 @@ require('dotenv').config();
 const port = process.env.PORT || 5000;  
 const url = process.env.db_url; 
 
-app.use(cors()); // Use CORS
+app.use(cors());
 app.use(bodyParser.json());
 
 app.listen(port, async () => {

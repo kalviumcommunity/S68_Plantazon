@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import Plantcomponent from "./components/Plantcomponent";
+import AddEntity from "./components/AddEntity";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/plants" element={<Plantcomponent />} />
+        <Route path="/form" element={<AddEntity />} />
       </Routes>
     </Router>
   );
