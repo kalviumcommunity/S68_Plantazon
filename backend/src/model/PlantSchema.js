@@ -23,6 +23,11 @@ const PlantSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  created_by: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User", 
+    required: true,
+  },
 });
 
 module.exports = mongoose.model("Plant", PlantSchema);

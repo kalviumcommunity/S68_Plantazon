@@ -8,19 +8,14 @@ router.post("/add", auth, async (req, res) => {
   try {
     const { name, species, description, imageUrl } = req.body;
 
-   
     if (!name || !species || !description || !imageUrl) {
       return res.status(400).json({ message: "Please fill in all fields" });
     }
+    const newPlant = new PlantModel({
+      ...req.body,
+      created_by: req.user._id,
+    });
 
-   
-    const existingPlant = await PlantModel.findOne({ name, species });
-    if (existingPlant) {
-      return res.status(400).json({ message: "Plant already exists" });
-    }
-
-
-    const newPlant = new PlantModel(req.body);
     await newPlant.save();
 
     res.status(201).json({ message: "Plant added successfully", plant: newPlant });
@@ -29,6 +24,7 @@ router.post("/add", auth, async (req, res) => {
     res.status(500).json({ message: "Failed to add plant", error });
   }
 });
+
 
 
 router.get("/all", async (req, res) => {
@@ -40,6 +36,7 @@ router.get("/all", async (req, res) => {
     res.status(500).json({ message: "Failed to fetch plants", error });
   }
 });
+
 
 
 router.get("/all/:id", auth, async (req, res) => {
@@ -57,6 +54,24 @@ router.get("/all/:id", auth, async (req, res) => {
     res.status(500).json({ message: "Failed to fetch plant", error });
   }
 });
+
+router.get("/all/by-user/:userId", auth, async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const plants = await PlantModel.find({ created_by: userId });
+
+    if (!plants.length) {
+      return res.status(404).json({ message: "No plants found for this user" });
+    }
+
+    res.status(200).json(plants);
+  } catch (error) {
+    console.error("Error fetching plants by user:", error);
+    res.status(500).json({ message: "Failed to fetch plants", error });
+  }
+});
+
+
 
 
 router.put("/change/:id", auth, async (req, res) => {
