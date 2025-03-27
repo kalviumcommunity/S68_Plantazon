@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const router = require('./src/controller/routes');
+const authRoutes = require('./src/controller/authRoutes'); // Import auth routes
 const connectDB = require('./src/database/db');
-
 
 const app = express();
 
@@ -12,11 +12,11 @@ require('dotenv').config({
 const port = process.env.PORT || 5000;  
 const db_url = process.env.db_url;  
 
-
-
 app.use(cors());
 app.use(express.json());
 
+// Use the auth routes
+app.use('/api/auth', authRoutes);
 
 app.listen(port, async () => {
   try {
@@ -27,9 +27,7 @@ app.listen(port, async () => {
   }
 });
 
-
-app.use('/api', router); 
-
+app.use('/api', router);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
