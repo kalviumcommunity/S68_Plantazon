@@ -91,7 +91,8 @@ function AddEntity() {
           <option value="Flowering Plants">Flowering Plants</option>
           <option value="Herbs">Herbs</option>
           <option value="Foliage Plants">Foliage Plants</option>
-          <option value="Tropical Plants">Tropical Plants</option>
+          <option value="Tropical Plants">Tropical Pl
+          ants</option>
           <option value="Edible Plants">Edible Plants</option>
           <option value="Climbing Plants">Climbing Plants - Vines</option>
           <option value="Aquatic Plants">Aquatic Plants</option>
